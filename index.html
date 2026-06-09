@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OT_FITNESS – Transform your body and mind with coach OT. Custom training, nutrition mindset & holistic strength. Build discipline, unlock power." />
+  <link rel="stylesheet" href="style.css">
+  <title>OT_FITNESS | Build Your Body · Unlock Strength</title>
+
+  <!-- Google Fonts: Montserrat (headlines) + Roboto (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* quick extra polish for fitness theme */
+    .hero-eyebrow .badge::before { background: #D94F30; }
+    .hero-title span { color: #D94F30; }
+    .tag { background: #FBE9E3; color:#B1562F; }
+    .btn-primary { background: #D94F30; box-shadow: 0 4px 12px rgba(217,79,48,0.3); }
+    .btn-primary:hover, .btn-primary:focus-visible { background: #B6482B; }
+    .btn-outline { border-color: #D94F30; color:#D94F30; }
+    .btn-outline:hover, .btn-outline:focus-visible { background: #D94F30; color:white; }
+    .newsletter-widget { background: linear-gradient(135deg, #D94F30 0%, #A83E24 100%); }
+    .pillar-card .pillar-num { background: linear-gradient(135deg, #D94F30, #C97058); }
+    .bookmark-btn.saved, .bookmark-btn:hover { color:#D94F30; }
+    .progress-fill { background: linear-gradient(90deg, #D94F30, #C97058); }
+  </style>
+</head>
+<body>
+
+  <!-- ====== PAGE LOADER ====== -->
+  <div id="page-loader" role="status" aria-label="Loading OT_FITNESS">
+    <div class="loader-logo">
+      <div class="logo-mark"><span>OT</span></div>
+      <p>O.T_FITNESS</p>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ====== SKIP LINK ====== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ====== HEADER ====== -->
+  <header id="site-header" role="banner">
+    <nav class="container" aria-label="Primary navigation">
+      <a href="#" class="nav-logo" aria-label="OT_FITNESS home">
+        <div class="logo-mark" aria-hidden="true"><span>OT</span></div>
+        <span class="brand">OT<span style="font-weight:400; color:#D94F30;">_FITNESS</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#hero" aria-current="page">Home</a></li>
+        <li><a href="#content-section">Method</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#toolkit">Tools</a></li>        
+      </ul>
+
+      <div class="nav-actions">
+        <a href="mailto:taoufikoughriss05@gmail.com" class="btn btn-outline" aria-label="Contact OT_FITNESS">Contact Coach</a>
+        <a href="#roadmap" class="btn btn-primary">Start Journey</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ====== MOBILE MENU ====== -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="false" aria-label="Mobile navigation">
+    <nav aria-label="Mobile navigation links">
+      <a href="#hero">Home</a>
+      <a href="#pillars">Pillars</a>
+      <a href="#toolkit">Tools</a>
+      <a href="#content-section">Method</a>
+      <a href="mailto:coach@otfitness.com" class="btn btn-outline">Contact</a>
+      <a href="#roadmap" class="btn btn-primary">Start Journey</a>
+    </nav>
+  </div>
+
+  <!-- ====== HERO ====== -->
+  <section id="hero" aria-labelledby="hero-heading">
+    <div class="container hero-inner">
+      <div class="hero-content fade-up">
+        <div class="hero-eyebrow">
+          <span class="badge">HARD WORK</span>
+          <span class="badge">DISCIPLINE</span>
+          <span class="badge">POWER</span>
+        </div>
+        <h1 class="hero-title" id="hero-heading">
+         BE HEALTHY<br><span>BE ACTIVE</span><br>BE STRONG
+        </h1>
+        <p class="hero-subtitle">
+          “You’re going to have to let it hurt. Let it suck. The harder you work, the better you will look. Your appearance isn’t parallel to how heavy you lift, it’s parallel to how hard you work.” – Coach OT
+        </p>
+        <div class="hero-cta">
+          <a href="#pillars" class="btn btn-primary">Explore the system</a>
+          <a href="#roadmap" class="btn btn-outline">See transformation</a>
+        </div>
+        <div class="hero-stats" role="list" aria-label="Program statistics">
+          <div class="hero-stat" role="listitem">
+            <strong>3</strong>
+            <span>Core pillars</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <strong>6</strong>
+            <span>Stages to mastery</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <strong>100%</strong>
+            <span>Mindset First</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Fitness tracker mockup -->
+      <div class="hero-visual fade-up" aria-hidden="true" style="transition-delay:.2s">
+        <div class="hero-device-wrap">
+          <div class="hero-device-mock">
+            <div class="mock-nav-bar">
+              <div class="mock-dot"></div>
+              <div class="mock-dot"></div>
+              <div class="mock-dot"></div>
+              <div class="mock-url-bar"></div>
+            </div>
+            <div class="mock-hero-block" style="background:linear-gradient(135deg,#D94F30,#C97058);">
+              <span>🔥 75% max effort 🔥</span>
+            </div>
+            <div class="mock-grid">
+              <div class="mock-card" style="background-image:url('meal.jpg'); background-size: cover; background-position: center;"></div>
+              <div class="mock-card" style="background-image:url('wofit.jpg');background-size: cover; background-position: center;"></div>
+              <div class="mock-card" style="background-image:url('mealfit.jpg') ;background-size: cover; background-position: center;"></div>
+              <div class="mock-card" style="background-image:url('dumbels.jpg') ;background-size: cover; background-position: center;"></div>
+              <div class="mock-card" style="background-image:url('workouts.webp') ;background-size: cover; background-position: center;"></div>
+              <div class="mock-card" style="background-image:url('muscle.jpg') ;background-size: cover; background-position: center;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES STRIP (fitness benefits) ====== -->
+  <section id="features" aria-labelledby="features-heading">
+    <div class="container">
+      <h2 id="features-heading" class="sr-only">OT_FITNESS core advantages</h2>
+      <div class="features-grid">
+        <div class="feature-card fade-up">
+          <div class="feature-icon ic-mocha" aria-hidden="true">📋</div>
+          <div class="feature-text">
+            <h3>Custom Blueprint</h3>
+            <p>Training designed for your body type, goals & lifestyle — no generic plans.</p>
+          </div>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.1s">
+          <div class="feature-icon ic-blue" aria-hidden="true">📈</div>
+          <div class="feature-text">
+            <h3>Progress Analytics</h3>
+            <p>Track strength, endurance, and recovery with weekly performance audits.</p>
+          </div>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.2s">
+          <div class="feature-icon ic-green" aria-hidden="true">🧠</div>
+          <div class="feature-text">
+            <h3>Mindset Coaching</h3>
+            <p>Discipline & habit formation — the psychology behind lasting results.</p>
+          </div>
+        </div>
+        <div class="feature-card fade-up" style="transition-delay:.3s">
+          <div class="feature-icon ic-mocha" aria-hidden="true">🥗</div>
+          <div class="feature-text">
+            <h3>Nutrition Integration</h3>
+            <p>Practical fuel strategies, not restrictive diets. Eat to perform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MAIN LAYOUT: CONTENT + SIDEBAR ====== -->
+  <div id="main-layout">
+
+    <!-- ==== MAIN CONTENT (Fitness Library) ==== -->
+    <main id="main-content" tabindex="-1" aria-label="Main content">
+
+      <section id="content-section" aria-labelledby="content-heading">
+        <div class="section-head">
+          <h2 class="section-title" id="content-heading">The <span>Fitness Library</span></h2>
+          <a href="#" class="view-all" aria-label="View all articles">All Articles →</a>
+        </div>
+
+        <div class="content-grid">
+
+          <article class="card fade-up" aria-labelledby="card1-title">
+            <div class="card-img-placeholder p1" role="img" aria-label="HIIT training thumbnail">⚡</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">HIIT</span>
+                <time datetime="2026-06-01">June 1, 2026</time>
+              </div>
+              <h3 class="card-title" id="card1-title">High-Intensity Interval Training: Burn & Build</h3>
+              <p class="card-excerpt">Short bursts, max effort: HIIT torches fat while preserving muscle. Learn protocols that fit into 20 minutes.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-mocha" aria-hidden="true">OT</div>
+                <span class="author-name">Coach OT</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="card fade-up" style="transition-delay:.1s" aria-labelledby="card2-title">
+            <div class="card-img-placeholder p2" role="img" aria-label="Nutrition article thumbnail">🥩</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">Nutrition</span>
+                <time datetime="2026-06-03">June 3, 2026</time>
+              </div>
+              <h3 class="card-title" id="card2-title">Protein Timing & Muscle Synthesis</h3>
+              <p class="card-excerpt">When and how much protein? New science on anabolic windows & whole food sources.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-blue" aria-hidden="true">EM</div>
+                <span class="author-name">Elena M.</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="card fade-up" style="transition-delay:.15s" aria-labelledby="card3-title">
+            <div class="card-img-placeholder p3" role="img" aria-label="Mindset thumbnail">🧘</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">Mindset</span>
+                <time datetime="2026-06-05">June 5, 2026</time>
+              </div>
+              <h3 class="card-title" id="card3-title">The Discipline Protocol: Build Unbreakable Habits</h3>
+              <p class="card-excerpt">Small daily rituals that rewire your brain for consistency — even on low-motivation days.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-dark" aria-hidden="true">OT</div>
+                <span class="author-name">Coach OT</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="card fade-up" style="transition-delay:.2s" aria-labelledby="card4-title">
+            <div class="card-img-placeholder p4" role="img" aria-label="Recovery thumbnail">💤</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">Recovery</span>
+                <time datetime="2026-06-07">June 7, 2026</time>
+              </div>
+              <h3 class="card-title" id="card4-title">Sleep, Stretching & Active Recovery</h3>
+              <p class="card-excerpt">Why recovery days skyrocket your gains. Science-backed methods for muscle repair and injury prevention.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-mocha" aria-hidden="true">PL</div>
+                <span class="author-name">Priya L.</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="card fade-up" style="transition-delay:.25s" aria-labelledby="card5-title">
+            <div class="card-img-placeholder p5" role="img" aria-label="Strength article thumbnail">🏋️</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">Strength</span>
+                <time datetime="2026-06-09">June 9, 2026</time>
+              </div>
+              <h3 class="card-title" id="card5-title">Compound Lifts: Squat, Deadlift, Bench</h3>
+              <p class="card-excerpt">Master the big three. Form, programming, and progressive overload to pack on real functional muscle.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-blue" aria-hidden="true">MV</div>
+                <span class="author-name">Marcus V.</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <article class="card fade-up" style="transition-delay:.3s" aria-labelledby="card6-title">
+            <div class="card-img-placeholder p6" role="img" aria-label="Cardio thumbnail">🏃</div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">Cardio</span>
+                <time datetime="2026-06-11">June 11, 2026</time>
+              </div>
+              <h3 class="card-title" id="card6-title">Zone 2 Training for Endurance & Longevity</h3>
+              <p class="card-excerpt">Steady state cardio that builds aerobic base without burning out. Perfect synergy with strength work.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-author">
+                <div class="avatar av-dark" aria-hidden="true">NO</div>
+                <span class="author-name">Nadia O.</span>
+              </div>
+              <button class="bookmark-btn" aria-label="Bookmark this article" data-bookmark>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- ==== SIDE PANEL (Fitness progress & trends) ==== -->
+    <aside id="side-panel" aria-label="Sidebar">
+      <div class="panel-widget fade-up">
+        <h2 class="widget-title">Your Journey Progress</h2>
+        <div class="progress-list" role="list">
+          <div class="progress-item" role="listitem">
+            <div class="progress-label"><span>Assessment</span><span>100%</span></div>
+            <div class="progress-track" role="progressbar" aria-valuenow="100"><div class="progress-fill" data-width="100"></div></div>
+          </div>
+          <div class="progress-item" role="listitem">
+            <div class="progress-label"><span>Mobility base</span><span>80%</span></div>
+            <div class="progress-track" role="progressbar" aria-valuenow="80"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+          <div class="progress-item" role="listitem">
+            <div class="progress-label"><span>Strength phase</span><span>65%</span></div>
+            <div class="progress-track" role="progressbar" aria-valuenow="65"><div class="progress-fill" data-width="65"></div></div>
+          </div>
+          <div class="progress-item" role="listitem">
+            <div class="progress-label"><span>Endurance block</span><span>40%</span></div>
+            <div class="progress-track" role="progressbar" aria-valuenow="40"><div class="progress-fill" data-width="40"></div></div>
+          </div>
+          <div class="progress-item" role="listitem">
+            <div class="progress-label"><span>Nutrition fine-tuning</span><span>25%</span></div>
+            <div class="progress-track" role="progressbar" aria-valuenow="25"><div class="progress-fill" data-width="25"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-widget fade-up" style="transition-delay:.1s">
+        <h2 class="widget-title">Trending Workouts</h2>
+        <ul class="trending-list" role="list">
+          <li class="trending-item" role="listitem" tabindex="0"><span class="trending-num">01</span><div class="trending-content"><div class="trending-title">HIIT Inferno</div><div class="trending-meta">🔥 Fat burn · 20 min</div></div></li>
+          <li class="trending-item" role="listitem" tabindex="0"><span class="trending-num">02</span><div class="trending-content"><div class="trending-title">Full Body Strength</div><div class="trending-meta">🏋️ 45 min · compound</div></div></li>
+          <li class="trending-item" role="listitem" tabindex="0"><span class="trending-num">03</span><div class="trending-content"><div class="trending-title">Mobility Flow</div><div class="trending-meta">🧘 Recovery & posture</div></div></li>
+          <li class="trending-item" role="listitem" tabindex="0"><span class="trending-num">04</span><div class="trending-content"><div class="trending-title">Kettlebell Complex</div><div class="trending-meta">⚡ explosive power</div></div></li>
+          <li class="trending-item" role="listitem" tabindex="0"><span class="trending-num">05</span><div class="trending-content"><div class="trending-title">Zone 2 Cardio</div><div class="trending-meta">🏃 endurance base</div></div></li>
+        </ul>
+      </div>
+
+      <div class="panel-widget newsletter-widget fade-up" style="transition-delay:.2s">
+        <h2 class="widget-title">OT Weekly Letter</h2>
+        <p class="newsletter-desc">Get free training guides, nutrition hacks, and mindset resets. No spam — just gains.</p>
+        <div class="newsletter-form" role="form" aria-label="Newsletter signup">
+          <label for="email-input" class="sr-only">Email address</label>
+          <input type="email" id="email-input" placeholder="your@bestself.com" aria-required="true" autocomplete="email" />
+          <button type="button" class="btn-sub" id="newsletter-btn">Subscribe →</button>
+        </div>
+      </div>
+
+      <div class="panel-widget fade-up" style="transition-delay:.3s">
+        <h2 class="widget-title">Training Tags</h2>
+        <div class="tags-cloud" role="list" aria-label="Fitness topics">
+          <span class="tag-chip" role="listitem" tabindex="0">Strength</span>
+          <span class="tag-chip" role="listitem" tabindex="0">HIIT</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Mobility</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Nutrition</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Mindset</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Calisthenics</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Recovery</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Endurance</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Hypertrophy</span>
+          <span class="tag-chip" role="listitem" tabindex="0">Functional</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ====== 3 PILLARS (Mindset, Training, Nutrition) ====== -->
+  <section id="pillars" aria-labelledby="pillars-heading">
+    <div class="container">
+      <div class="pillars-intro fade-up">
+        <span class="tag">OT method</span>
+        <h2 id="pillars-heading">The Three Pillars</h2>
+        <p>Strength isn't accidental. Master these three foundations and transform from the inside out.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card fade-up" data-num="1">
+          <div class="pillar-num" aria-hidden="true">1</div>
+          <h3>Mindset & Discipline</h3>
+          <p>We rewire limiting beliefs, build stoic discipline, and create identity-based habits. No motivation required — only commitment.</p>
+          <div class="pillar-tags" aria-label="Related topics"><span class="pillar-tag">Resilience</span><span class="pillar-tag">Habit stacking</span><span class="pillar-tag">Focus</span></div>
+        </div>
+        <div class="pillar-card fade-up" data-num="2" style="transition-delay:.1s">
+          <div class="pillar-num" aria-hidden="true">2</div>
+          <h3>Functional Training</h3>
+          <p>Compound lifts, mobility, and sport-specific drills. Build real-world strength, explosive power, and injury-proof joints.</p>
+          <div class="pillar-tags" aria-label="Related topics"><span class="pillar-tag">Compound Lifts</span><span class="pillar-tag">Kettlebells</span><span class="pillar-tag">Bodyweight</span></div>
+        </div>
+        <div class="pillar-card fade-up" data-num="3" style="transition-delay:.2s">
+          <div class="pillar-num" aria-hidden="true">3</div>
+          <h3>Precision Nutrition</h3>
+          <p>Tailored macros, whole foods, and metabolic adaptation. Fuel performance, shred body fat, and feel energized 24/7.</p>
+          <div class="pillar-tags" aria-label="Related topics"><span class="pillar-tag">Macros</span><span class="pillar-tag">Meal prep</span><span class="pillar-tag">Hydration</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TRANSFORMATION ROADMAP ====== -->
+  <section id="roadmap" aria-labelledby="roadmap-heading">
+    <div class="container">
+      <div class="section-head fade-up">
+        <div>
+          <h2 class="section-title" id="roadmap-heading">The <span>Transformation</span> Roadmap</h2>
+          <p>Six stages from start to unstoppable — your personal evolution system.</p>
+        </div>
+      </div>
+      <ol class="roadmap-track fade-up" aria-label="Six-step transformation roadmap">
+        <li class="roadmap-step active" data-step="1"><div class="step-circle" aria-hidden="true"><span>1</span></div><div class="step-content"><h4>Set a Clear Goal</h4><p>Build muscle OR Lose fat</p><span class="step-badge">Start here</span></div></li>
+        <li class="roadmap-step" data-step="2"><div class="step-circle" aria-hidden="true"><span>2</span></div><div class="step-content"><h4>Workout Program</h4><p>Train consistently 3–5 times per week</p><span class="step-badge">Strategy</span></div></li>
+        <li class="roadmap-step" data-step="3"><div class="step-circle" aria-hidden="true"><span>3</span></div><div class="step-content"><h4>Nutrition</h4><p>Protein & carbs & healthy fats</p><span class="step-badge">Build base</span></div></li>
+        <li class="roadmap-step" data-step="4"><div class="step-circle" aria-hidden="true"><span>4</span></div><div class="step-content"><h4>Sleep and Recovery</h4><p>7-9 hours of sleep night</p><span class="step-badge">Get stronger</span></div></li>
+        <li class="roadmap-step" data-step="5"><div class="step-circle" aria-hidden="true"><span>5</span></div><div class="step-content"><h4>Consistent</h4><p>Results come from months of effort, not days. </p><span class="step-badge">Dominate</span></div></li>
+        <li class="roadmap-step" data-step="6"><div class="step-circle" aria-hidden="true"><span>6</span></div><div class="step-content"><h4>Adjust and Keep Learning</h4><p>Fitness is a long-term process of continuous improvement</p><span class="step-badge">Champion</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ====== TOOLKIT / YOUR ARSENAL ====== -->
+  <section id="toolkit" aria-labelledby="toolkit-heading">
+    <div class="container">
+      <div class="section-head fade-up">
+        <h2 class="section-title" id="toolkit-heading">Your <span>Arsenal</span></h2>
+      </div>
+      <div class="toolkit-grid">
+        <div class="tool-card html fade-up"><div class="tool-icon" aria-hidden="true">🏋️‍♂️</div><h3>Strength Equipment</h3><p>Dumbbells, barbells, resistance bands, and bodyweight mastery — tools that forge raw power.</p></div>
+        <div class="tool-card css fade-up" style="transition-delay:.1s"><div class="tool-icon" aria-hidden="true">🏃‍♀️</div><h3>Cardio & Conditioning</h3><p>Ski erg, kettlebells, assault bike, and plyometrics to build a monster engine.</p></div>
+        <div class="tool-card js fade-up" style="transition-delay:.2s"><div class="tool-icon" aria-hidden="true">🥑</div><h3>Nutrition System</h3><p>Tracking apps, meal templates, supplement framework — real food for real results.</p></div>
+      </div>
+      <div class="tool-mandate fade-up" role="note">
+        <span class="mandate-icon" aria-hidden="true">🎯</span>
+        <p style="text-align: center;">The Mandate: <span>No shortcuts.</span> Consistency over intensity, mastery over ego.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" aria-label="OT_FITNESS home">
+            <div class="logo-mark" style="background:linear-gradient(135deg,#D94F30,#A55A40)" aria-hidden="true"><span>OT</span></div>
+            <span class="brand">OT<span style="font-weight:400;">_FITNESS</span></span>
+          </a>
+          <p>Coach OT's signature system: mindset, strength, nutrition. Engineered for those who refuse to stay average.</p>
+          <address class="footer-contact">
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <a href="tel:+21295254025" aria-label="Call OT_FITNESS">
+              <i class="fa-solid fa-phone"></i> +212695254025
+            </a>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+            <a href="mailto:taoufikoughriss05@gmail.com" aria-label="Email OT_FITNESS">
+              <i class="fa-solid fa-envelope"></i >taoufikoughriss05@gmail.com
+            </a>
+            <link rel="stylesheet" href="https://maps.google.com/?q=Errachidia,Morocco" target="blank">
+            <a href="#" aria-label="Location"> 
+              <i class="fa-solid fa-location-dot"></i> Errachidia, Morocco
+            </a>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <a href="" target="_blank"> 
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </address>
+        </div>
+        <div class="footer-col"><h4>Navigate</h4><ul role="list"><li><a href="#hero">Home</a></li><li><a href="#pillars">Pillars</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#toolkit">Tools</a></li><li><a href="#content-section">Library</a></li></ul></div>
+        <div class="footer-col"><h4>Resources</h4><ul role="list"><li><a href="#">8-Week Starter Plan</a></li><li><a href="#">Meal Prep Ebook</a></li><li><a href="#">Workout Log</a></li><li><a href="#">Mindset Guide</a></li><li><a href="#">Badge Criteria</a></li></ul></div>
+        <div class="footer-col"><h4>Program</h4><ul role="list"><li><a href="#">1:1 Coaching</a></li><li><a href="#">Group Camps</a></li><li><a href="#">Testimonials</a></li><li><a href="#">FAQ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OT_FITNESS — Built with discipline. All gains reserved.</p>
+        <div class="footer-badges" aria-label="Standards badges">
+          <span class="footer-badge">Strength First</span>
+          <span class="footer-badge">Evidence Based</span>
+          <span class="footer-badge">Holistic Health</span>
+          <span class="footer-badge">No BS</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="script.js"></script>
+</body>
+</html>
